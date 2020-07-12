@@ -1,0 +1,29 @@
+COMMENTS SEARCH README
+Module version 1.01
+
+The Comments Search module is a module for the XOOPS website content management system.
+
+The module contains only a search function which provides 
+searching XOOPS comments.
+The module appears in Advanced Search options as a checkbox 
+with a module name (DB_COMMENTS_NAME language string). The module has no contents, 
+no admin options, no any other stuff.
+
+NOTICE - $modversion['hasMain'] = 1;
+The module comes with hasMain option turned on. This allows setting group permissions 
+to the module (usually you want e.g. anonymous users to be able to search comments too -
+- XOOPS 2.0.7 presents in search form only those modules which are accessible by a particular
+user). However, setting hasMain causes the module appear in system menu. To prevent appearing 
+Comments entry in XOOPS system menu, in Module Admin set Module Order to 0 - that will make 
+the module invisible.
+
+REVISION HISTORY
+
+version 1.01
+- particular users' comments show properly - erroneous comment marks removed from 
+  search.inc.php lines 22-24
+- $modversion['hasMain'] = 1 set by default in xoops_version.php
+- slogo.png added
+- this README added
+
+version 1.00 - initial release
